@@ -1,14 +1,6 @@
 const jose = require('jose')
+require('dotenv').config()
 
-const PEM_PRIVATE_KEY = "MC4CAQAwBQYDK2VwBCIEIBur0PwU9CPQ5bAnWN4fN5z6h5GZtBUuqQGu8r+qVHeX"
-const PEM_PUBLIC_KEY = "MCowBQYDK2VwAyEA1iyKufBwkjrNpQ7HB53B4P2sq5BM47YzCJuJXRy6Jvw="
-
-/**
- * -----BEGIN PRIVATE KEY-----
- *  MC4CAQAwBQYDK2VwBCIEIBur0PwU9CPQ5bAnWN4fN5z6h5GZtBUuqQGu8r+qVHeX
- * -----END PRIVATE KEY-----
- * -----BEGIN PUBLIC KEY-----
- *  MCowBQYDK2VwAyEA1iyKufBwkjrNpQ7HB53B4P2sq5BM47YzCJuJXRy6Jvw=
- * -----END PUBLIC KEY-----
- */
+console.log(process.env.PEM_PRIVATE_KEY);
+console.log(process.env.PEM_PUBLIC_KEY);
 
